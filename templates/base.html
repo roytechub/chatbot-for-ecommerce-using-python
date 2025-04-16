@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Chatbot</title>
+</head>
+<body>
+<!-- AniClothe Homepage Section -->
+<header class="anic-header">
+    <nav class="anic-navbar">
+        <div class="anic-logo">
+            <span>AniCLOTHE</span>
+        </div>
+        <ul class="anic-menu">
+            <li>HOME</li>
+            <li><a href="{{ url_for('product') }}">ALL PRODUCTS</a></li>
+            <li>ABOUT</li>
+            <li>CONTACT</li>
+            <li>ACCOUNT</li>
+        </ul>
+        <div class="anic-search-cart">
+            <input type="text" placeholder="Search for products...">
+            <img src="{{ url_for('static', filename='images/cart-icon.png') }}" alt="Cart">
+        </div>
+    </nav>
+    <section class="anic-hero">
+        <div class="anic-hero-text">
+            <h5>Best Quality Products</h5>
+            <h1>Welcome to<br>AniClothe –<br>Where Comfort Meets Style.</h1>
+            <p>Discover fashion that fits your lifestyle – shop the latest collections.</p>
+        </div>
+        <div class="anic-hero-img">
+            <img src="{{ url_for('static', filename='images/girl-wearing-shirt.png') }}" alt="Model Wearing Anime T-shirt">
+        </div>
+    </section>
+</header>
+
+
+<div class="container">
+    <div class="chatbox">
+        <div class="chatbox__support">
+            <div class="chatbox__header">
+                <div class="chatbox__image--header">
+                    <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image">
+                </div>
+                <div class="chatbox__content--header">
+                    <h4 class="chatbox__heading--header">Chat support</h4>
+                    <p class="chatbox__description--header">Hi. My name is Roy. How can I help you?</p>
+                </div>
+            </div>
+            <div class="chatbox__messages">
+                <div></div>
+            </div>
+            <div class="chatbox__footer">
+                <input type="text" placeholder="Write a message...">
+                <button class="chatbox__send--footer send__button">Send</button>
+            </div>
+        </div>
+        <div class="chatbox__button">
+            <button><img src="{{ url_for('static', filename='images/chatbox-icon.svg') }}" /></button>
+        </div>
+    </div>
+</div>
+
+    <script>
+        const SCRIPT_ROOT = "/";
+    </script>
+    <script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
+
+</body>
+</html>

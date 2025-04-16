@@ -1,0 +1,158 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey :-)",
+        "Hello, thanks for visiting",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {
+      "tag": "items",
+      "patterns": [
+        "What do you have",
+        "Which items do you have?",
+        "what you sell",
+        "What kinds of items are there?",
+        "What do you sell"
+      ],
+      "responses": [
+        "We sell Tshirt",
+        "We have Tshirt, Anime tshirt, Motivation Tshirt"
+      ]
+    },
+    {
+      "tag": "refund_policy",
+      "patterns": [
+        "about refund policy",
+        "What is your refund policy?",
+        "Can I return a T-shirt?",
+        "How do refunds work?",
+        "Do you offer money-back guarantee?",
+        "What if I receive a damaged product?"
+      ],
+      "responses": [
+        "We offer a 7-day return policy. If you're not satisfied with your order, you can return it within 7 days for a full refund.",
+        "Yes, you can return your T-shirt within 7 days as long as it's unworn and in original condition.",
+        "If you receive a damaged product, please contact our support team with images, and we will arrange a replacement or refund."
+      ]
+    },
+    {
+      "tag": "delivery_time",
+      "patterns": [
+        "delivery time",
+        "How long does delivery take",
+        "When will my order arrive",
+        "What is the estimated delivery time",
+        "Do you offer express shipping",
+        "Is international shipping available"
+      ],
+      "responses": [
+        "Orders are typically delivered within 5–7 business days, with express shipping available for faster delivery, and we do offer international shipping depending on the destination."
+      ]
+    },
+    {
+      "tag": "about_store",
+      "patterns": [
+        "about the store",
+        "about the Aniclothe",
+        "Tell me about the store",
+        "What is Aniclothe?",
+        "Can you describe your store"    
+      ],
+      "responses": [
+         "Certainly! I'd be happy to tell you about our store. Aniclothe is an online clothing store that specializes in custom-designed t-shirts.\nOur motto is Where Comfort Meets Style and we encourage our customers to discover fashion that fits their lifestyle by shopping our latest collections.\nIt's worth noting that we are currently an online-only store so all our products are available exclusively through our website.\nThis allows us to provide a seamless shopping experience for our customers from the comfort of their homes.\nIs there anything specific about our store or products you'd like to know more about?",
+         "Certainly! I'd be happy to tell you about our store. Aniclothe is an online clothing store that specializes in custom-designed t-shirts.\nOur motto is Where Comfort Meets Style and we encourage our customers to discover fashion that fits their lifestyle by shopping our latest collections.\nIt's worth noting that we are currently an online-only store so all our products are available exclusively through our website.\nThis allows us to provide a seamless shopping experience for our customers from the comfort of their homes.\nIs there anything specific about our store or products you'd like to know more about?",
+         "Certainly! I'd be happy to tell you about our store. Aniclothe is an online clothing store that specializes in custom-designed t-shirts.\nOur motto is Where Comfort Meets Style and we encourage our customers to discover fashion that fits their lifestyle by shopping our latest collections.\nIt's worth noting that we are currently an online-only store so all our products are available exclusively through our website.\nThis allows us to provide a seamless shopping experience for our customers from the comfort of their homes.\nIs there anything specific about our store or products you'd like to know more about?",
+         "Certainly! I'd be happy to tell you about our store. Aniclothe is an online clothing store that specializes in custom-designed t-shirts.\nOur motto is Where Comfort Meets Style and we encourage our customers to discover fashion that fits their lifestyle by shopping our latest collections.\nIt's worth noting that we are currently an online-only store so all our products are available exclusively through our website.\nThis allows us to provide a seamless shopping experience for our customers from the comfort of their homes.\nIs there anything specific about our store or products you'd like to know more about?",
+         "Certainly! I'd be happy to tell you about our store. Aniclothe is an online clothing store that specializes in custom-designed t-shirts.\nOur motto is Where Comfort Meets Style and we encourage our customers to discover fashion that fits their lifestyle by shopping our latest collections.\nIt's worth noting that we are currently an online-only store so all our products are available exclusively through our website.\nThis allows us to provide a seamless shopping experience for our customers from the comfort of their homes.\nIs there anything specific about our store or products you'd like to know more about?"
+      ]
+    },
+    {
+      "tag": "payment_methods",
+      "patterns": [
+        "payment",
+        "payment method",
+        "What payment methods do you accept?",
+        "Can I pay with UPI",
+        "Do you accept cash on delivery",
+        "Is credit card payment available"
+      ],
+      "responses": [
+        "We accept multiple payment methods, including UPI, credit/debit cards, and net banking.",
+        "Yes, UPI payments are supported! You can use Google Pay, PhonePe, Paytm, and other UPI services.",
+        "Cash on delivery (COD) is available for select locations."
+      ]
+    },
+    {
+      "tag": "order_tracking",
+      "patterns": [
+        "order tracking",
+        "How can I track my order?",
+        "Where is my order?",
+        "Can I check my order status?",
+        "Do you provide tracking details?"
+      ],
+      "responses": [
+        "Once your order is shipped, you will receive a tracking link via email or SMS.",
+        "You can track your order from the 'My Orders' section on our website using your order ID.",
+        "If you have not received tracking details, please contact our support team."
+      ]
+    },
+    {
+      "tag": "customer_support",
+      "patterns": [
+        "customer support",
+        "customer call",
+        "How can I contact customer support?",
+        "What if I have an issue with my order?",
+        "Do you have live chat support?",
+        "How do I get help?"
+      ],
+      "responses": [
+        "You can reach out to us via email at support@aniclothe.com or through our live chat on the website.",
+        "For any order-related issues, please contact our support team with your order ID.",
+        "We offer live chat support during business hours to assist you with any queries!"
+      ]
+    },
+    {
+      "tag": "discounts_offers",
+      "patterns": [
+        "any discounts",
+        "Do you offer discounts?",
+        "Are there any ongoing sales?",
+        "How can I get a coupon code?",
+        "Do you have first-time buyer discounts?"
+      ],
+      "responses": [
+        "Yes! We frequently run discounts and special sales. Check our website or sign up for our newsletter to stay updated.",
+        "New customers can get a 10% discount on their first purchase! Use code 'WELCOME10' at checkout.",
+        "Follow us on social media to get exclusive coupon codes and offers!"
+      ]
+    }
+  ]
+}

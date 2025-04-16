@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<head>
+    <meta charset="UTF-8">
+    <title>product</title>
+</head>
+<style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fff7db;
+    }
+
+    .container {
+      padding: 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .breadcrumb {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .main-title {
+      font-size: 48px;
+      color: #ff9900;
+      margin: 0;
+    }
+
+    .result-text {
+      font-size: 16px;
+      margin: 10px 0 30px 0;
+      color: #333;
+    }
+
+    .products {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .product-card {
+      background: white;
+      border: 2px solid #ccc;
+      padding: 20px;
+      width: 300px;
+      position: relative;
+      border-radius: 5px;
+      transition: box-shadow 0.3s;
+    }
+
+    .product-card:hover {
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    .product-card h3 {
+      font-size: 18px;
+      margin: 10px 0;
+    }
+
+    .price {
+      font-size: 16px;
+      margin-top: 5px;
+    }
+
+    .price del {
+      color: #999;
+      margin-right: 10px;
+    }
+
+    .new-price {
+      font-weight: bold;
+      color: #000;
+    }
+
+    .badge {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: white;
+      color: #333;
+      padding: 5px 10px;
+      border-radius: 15px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      font-size: 14px;
+    }
+  </style>
+<body>
+<!-- AniClothe Homepage Section -->
+<header class="anic-header">
+    <nav class="anic-navbar">
+        <div class="anic-logo">
+            <span>AniCLOTHE</span>
+        </div>
+        <ul class="anic-menu">
+            <li>HOME</li>
+            <li>ALL PRODUCTS</a></li>
+            <li>ABOUT</li>
+            <li>CONTACT</li>
+            <li>ACCOUNT</li>
+        </ul>
+        <div class="anic-search-cart">
+            <input type="text" placeholder="Search for products...">
+            <img src="{{ url_for('static', filename='images/cart-icon.png') }}" alt="Cart">
+        </div>
+    </nav>
+</header>
+<div class="container">
+    <nav class="breadcrumb">Home / Shop</nav>
+    <h1 class="main-title">Shop</h1>
+    <p class="result-text">Showing all 3 results</p>
+
+    <div class="products">
+      <!-- Product 1 -->
+      <div class="product-card">
+        <div class="badge">Sale!</div>
+        <img src="static/images/girl-wearing-shirt.png" alt="Cotton Unisex Tee" />
+        <h3>Cotton Unisex classic tee</h3>
+        <div class="price">
+          <del>₹999.00</del> <span class="new-price">₹689.00</span>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product-card">
+        <div class="badge">Sale!</div>
+        <img src="static/images/girl-wearing-shirt.png" alt="Guku’s next opponent women tshirt" />
+        <h3>Guku’s next opponent women tshirt</h3>
+        <div class="price">
+          <span class="new-price">₹689.00</span>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product-card">
+        <div class="badge">Sale!</div>
+        <img src="static/images/girl-wearing-shirt.png" alt="Guku’s opponent men tshirt" />
+        <h3>Guku’s opponent men tshirt</h3>
+        <div class="price">
+          <del>₹699.00</del> <span class="new-price">₹489.00</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="container">
+    <div class="chatbox">
+        <div class="chatbox__support">
+            <div class="chatbox__header">
+                <div class="chatbox__image--header">
+                    <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image">
+                </div>
+                <div class="chatbox__content--header">
+                    <h4 class="chatbox__heading--header">Chat support</h4>
+                    <p class="chatbox__description--header">Hi. My name is Roy. How can I help you?</p>
+                </div>
+            </div>
+            <div class="chatbox__messages">
+                <div></div>
+            </div>
+            <div class="chatbox__footer">
+                <input type="text" placeholder="Write a message...">
+                <button class="chatbox__send--footer send__button">Send</button>
+            </div>
+        </div>
+        <div class="chatbox__button">
+            <button><img src="{{ url_for('static', filename='images/chatbox-icon.svg') }}" /></button>
+        </div>
+    </div>
+</div>
+
+    <script>
+        const SCRIPT_ROOT = "/";
+    </script>
+    <script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
+
+</body>
+</html>
